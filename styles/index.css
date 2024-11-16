@@ -10,7 +10,7 @@ header {
   margin: 20px;
 }
 
-#run {
+.run {
   padding: 10px;
   color: white;
   background: linear-gradient(to right, blue, rgb(247, 28, 65));
@@ -33,4 +33,5 @@ main {
   border-radius: 20px;
   width: 300px;
   height: 100px;
+  margin: 20px;
 }
