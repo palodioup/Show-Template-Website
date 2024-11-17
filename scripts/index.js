@@ -1,14 +1,15 @@
 const resultArea = document.getElementById("footer");
 const renderButton = document.getElementById("run");
 
+const HTMLObject = {
+  topic: "This is a custom box",
+  text: {
+    name: "My name is Dipo",
+    age: "I am nine years old",
+  },
+};
+
 renderButton.onclick = () => {
-  const HTMLObject = {
-    topic: "This is a custom box",
-    text: {
-      name: "Hello, I am Dipo",
-      age: "I am nine years old",
-    },
-  };
   const boxToBeShown = `
     <main>
       <div class="container">
@@ -16,6 +17,10 @@ renderButton.onclick = () => {
         <p>${HTMLObject.text.name} <br/> ${HTMLObject.text.age}</p>
       </div>
     </main>
-`;
-  resultArea.innerHTML = boxToBeShown;
+    `;
+  try {
+    resultArea.innerHTML = boxToBeShown;
+  } catch (error) {
+    console.error("Error caught:", error)
+  }
 };
