@@ -25,13 +25,15 @@ main {
 }
 
 .container {
+  box-shadow: 10px 10px 10px grey;
   background-color: rgb(184, 104, 7);
   color: white;
   text-align: center;
-  padding: 100px;
   border: 1px green solid;
   border-radius: 20px;
+  padding: 30px;
   width: 300px;
-  height: 100px;
+  height: 225px;
   margin: 20px;
+  overflow: hidden;
 }
